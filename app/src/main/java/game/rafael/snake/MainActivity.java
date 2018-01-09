@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radio3 = (RadioButton) this.findViewById(R.id.radioButton3);
 
         Intent intent = new Intent(this, SnakeActivity.class);
-        int nivel = 0;
+        int nivel = 1;
         if (radio2.isChecked()) {
             nivel = 2;
         } else if (radio3.isChecked()) {

@@ -45,7 +45,11 @@ public class Snake extends GameComponent {
 
     @Override
     public List<Point> getPoints() {
-        return positions;
+        List<Point> points = new ArrayList<>();
+        points.addAll(positions);
+        points.add(head);
+
+        return points;
     }
 
     @Override
